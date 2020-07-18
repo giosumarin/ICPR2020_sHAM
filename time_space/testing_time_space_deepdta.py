@@ -149,7 +149,7 @@ try:
             elif opt == "-m":
                 print("model_file: ", arg)
                 model_file=arg
-            elif: opt == "-q":
+            elif opt == "-q":
                 print("probabilistic quantization", arg)
                 q = False if arg == 0 else True
             elif opt == "-s":

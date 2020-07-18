@@ -151,7 +151,7 @@ try:
             elif opt == "-m":
                 print("model_file: ", arg)
                 model_file=arg
-            elif: opt == "-q":
+            elif opt == "-q":
                 print("probabilistic quantization", arg)
                 q = False if arg == 0 else True
             elif opt == "-s":
@@ -314,7 +314,7 @@ if type_compr == "pruning":
         tex.write("\npruning = {}\ndiff_acc = {}\nspace = {}\ntime = {}\n".format(pruning_l_h, diff_acc_h, space_h, time_h))
 
 elif type_compr == "pruningweightsharing":
-        file_results = "results/sparse_huffman_pruningws.txt" if q == False else "results/sparse_huffman_pruningpq.txt"
+    file_results = "results/sparse_huffman_pruningws.txt" if q == False else "results/sparse_huffman_pruningpq.txt"
     with open(file_results, "a+") as tex:
         tex.write(directory)
         tex.write("\npruning = {}\nclusters = {}\nunique = {}\ndiff_acc = {}\nspace = {}\ntime = {}\n".format(pruning_l_sh, ws_l_sh, nonzero_sh, diff_acc_sh, space_sh, time_sh))

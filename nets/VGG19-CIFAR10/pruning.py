@@ -90,6 +90,7 @@ post_pruning_test = pr_model.accuracy(x_test, y_test)
 print("Accuracy postpruning train: ", post_pruning_train)
 print("Accuracy postpruning test: ", post_pruning_test)
 
+dataset = tf.data.Dataset.from_tensor_slices(
   (tf.cast(x_train, tf.float32),
    tf.cast(y_train,tf.int64)))
 dataset = dataset.shuffle(1000).batch(BATCH_SIZE)
