@@ -1,3 +1,16 @@
+python3 -m venv venv_compr
+source venv_compr/bin/activate
+pip install -r env_packages.txt
+
+cd compressionNN_package/
+pip install -e ./
+cd ..
+ 
+pip install matplotlib
+pip install seaborn
+pip install pandas
+
+
 cd nets/VGG19-CIFAR10
 ./run_vgg19cifar.sh
 cd ..
