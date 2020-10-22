@@ -135,7 +135,7 @@ try:
     string_error = 'usage: testing_time_space.py -t <type of compression> -d <directory of compressed weights> -m <file original keras model>'
     # Define the getopt parameters
     opts, args = getopt.getopt(argv, 't:d:m:s:q:', ['type', 'directory', 'model', 'dataset', 'quantization'])
-    if len(opts) != 4:
+    if len(opts) != 5:
       print (string_error)
       # Iterate the options and get the corresponding values
     else:
