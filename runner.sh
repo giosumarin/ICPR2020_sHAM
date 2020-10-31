@@ -13,11 +13,11 @@ pip install pandas
 
 cd nets/DeepDTA/KIBA
 ./run_deepdtakiba.sh
-cd ../../
+cd ../../../
 
 cd nets/DeepDTA/DAVIS
 ./run_deepdtadavis.sh
-cd ../../
+cd ../../../
 
 cd nets/VGG19-CIFAR10
 ./run_vgg19cifar.sh
@@ -27,7 +27,7 @@ cd nets/VGG19-MNIST
 ./run_vgg19mnist.sh
 cd ../../
 
-cd time_space
+cd time_space/
 
 
 python testing_time_space_deepdta.py -t weightsharing -d tf/DeepDTA/KIBA/weightsharing/ -m tf/DeepDTA/KIBA/deepDTA_kiba.h5 -s kiba -q 0
