@@ -1,5 +1,6 @@
 python3 -m venv venv_compr
 source venv_compr/bin/activate
+pip install --upgrade pip
 pip install -r env_packages.txt
 
 cd compressionNN_package/
