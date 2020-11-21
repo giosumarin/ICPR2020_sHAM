@@ -4,6 +4,10 @@ Description: available in ICPR2020_sHAM.pdf
 ## Getting Started
 ### Prerequisites
 
+Install python3, python3-pip and python3-venv (Debian 10.6)
+Make sure that python --version starts by 3 or execute alias python='pyhton3' in the shell before to run runner.sh
+For CUDA configuration follow https://www.tensorflow.org/install/gpu
+
 Jupyter Notebook for make plots
 
 <!--
