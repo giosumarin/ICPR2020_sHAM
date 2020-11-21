@@ -87,7 +87,7 @@ lw = ws_model.model.get_weights()
 TRAIN_RES = ([pre_ws_train] + [post_ws_train] + ws_model.acc_train)
 TEST_RES = ([pre_ws_test] + [post_ws_test] + ws_model.acc_test)
 
-with open("LeNet_MNIST_ws.txt", "a+") as tex:
+with open("VGG19_MNIST_ws.txt", "a+") as tex:
     tex.write("{} lr {} cluster {} -->\n {}\n , {}\n\n".format(b,l, c, TRAIN_RES, TEST_RES))
 
 DIR="weightsharing"

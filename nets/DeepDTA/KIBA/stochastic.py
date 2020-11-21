@@ -142,8 +142,8 @@ print("apply ws, test acc -->" , post_ws_test)
 
 ws_model.train_ws_deepdta(epochs=100, lr=l, dataset=dataset, X_train=x_train, y_train=y_train, X_test=x_test, y_test=y_test, step_per_epoch = 10000000, patience=0)
 
-TRAIN_RES = ([pre_pruning_train] + [post_pruning_train] + ws_model.acc_train)
-TEST_RES = ([pre_pruning_test] + [post_pruning_test] + ws_model.acc_test)
+TRAIN_RES = ([pre_ws_train] + [post_ws_train] + ws_model.acc_train)
+TEST_RES = ([pre_ws_test] + [post_ws_test] + ws_model.acc_test)
 
 
 with open("deepdta_kiba_st.txt", "a+") as tex:
