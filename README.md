@@ -1,6 +1,6 @@
 # Compression strategies and space-conscious representations for deep neural networks
 This repository contains the code allowing to reproduce the results described in G. Marinò et al.,
-Compression strategies and space-conscious representations for deep neural networks, accepted at
+_Compression strategies and space-conscious representations for deep neural networks_, accepted at
 the forthcoming [ICPR](https://www.micc.unifi.it/icpr2020/) conference. The original contribution
 is [available](ICPR2020_sHAM.pdf) for reviewing purposes of a companion paper currently submitted at
 the [RRPR](https://rrpr2020.sciencesconf.org/) conference.
@@ -10,11 +10,10 @@ the [RRPR](https://rrpr2020.sciencesconf.org/) conference.
 
 ### Prerequisites
 
-* Install python3, python3-pip and python3-venv (Debian 10.6)
-* Make sure that python --version starts by 3 or execute alias python='pyhton3' in the shell before to run runner.sh
-* For CUDA configuration follow https://www.tensorflow.org/install/gpu
-
-Jupyter Notebook for make plots
+* Install `python3`, `python3-pip` and `python3-venv` (Debian 10.6)
+* Make sure that `python --version` starts by 3 or execute `alias python='pyhton3'` in the shell before executing `runner.sh`.
+* For CUDA configuration follow https://www.tensorflow.org/install/gpu.
+* Jupyter Notebook is needed for chart generation.
 
 <!--
 tensorflow-gpu==2.2.0 or tensorflow==2.2.0
@@ -31,7 +30,7 @@ Go to compressionNN_package and install the package with setup.py
 -->
 ### Configuration
 The library import `import keras.backend.tensorflow_backend as tfback` raises an exception if no GPU is available.
-This can be fixed by commenting out all lines in [`nets/GPU.py in nets/`](nets/GPU.py in nets/)
+This can be fixed by commenting out all lines in [`nets/GPU.py in nets/`](nets/GPU.py)
 
 The trained VGG models are rather big, so they are not versioned. Rather, they are available for [download](https://mega.nz/folder/yKgU2CYD#-Kf3FGZinDe5T6HgLOjxnw).
 Once downloaded, `VGG19-CIFAR/retrain.h5 ` should be moved in [`nets/VGG19-CIFAR`](nets/VGG19-CIFAR) and `VGG19-MNIST/VGG19MNIST.h5` should be moved in [`nets/VGG19-MNIST`](nets/VGG19-MNIST).
