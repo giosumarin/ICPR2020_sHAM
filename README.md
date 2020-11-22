@@ -1,12 +1,18 @@
 # Compression strategies and space-conscious representations for deep neural networks
-Description: available in ICPR2020_sHAM.pdf
+This repository contains the code allowing to reproduce the results described in G. Marinò et al.,
+Compression strategies and space-conscious representations for deep neural networks, accepted at
+the forthcoming [ICPR](https://www.micc.unifi.it/icpr2020/) conference. The original contribution
+is [available](ICPR2020_sHAM.pdf) for reviewing purposes of a companion paper currently submitted at
+the [RRPR](https://rrpr2020.sciencesconf.org/) conference.
+
 
 ## Getting Started
+
 ### Prerequisites
 
-Install python3, python3-pip and python3-venv (Debian 10.6)
-Make sure that python --version starts by 3 or execute alias python='pyhton3' in the shell before to run runner.sh
-For CUDA configuration follow https://www.tensorflow.org/install/gpu
+* Install python3, python3-pip and python3-venv (Debian 10.6)
+* Make sure that python --version starts by 3 or execute alias python='pyhton3' in the shell before to run runner.sh
+* For CUDA configuration follow https://www.tensorflow.org/install/gpu
 
 Jupyter Notebook for make plots
 
@@ -20,16 +26,17 @@ joblib==0.14.1
 matplotlib==3.1.3
 Anaconda installation
 
-### Installation
+Installation
 Go to compressionNN_package and install the package with setup.py
 -->
 ### Configuration
-If you have problem with "import keras.backend.tensorflow_backend as tfback"
-comment all line of GPU.py in nets/
-Download trained weights for VGG19 at https://mega.nz/folder/yKgU2CYD#-Kf3FGZinDe5T6HgLOjxnw. Then put VGG19-CIFAR/retrain.h5 in nets/VGG19-CIFAR and VGG19-MNIST/VGG19MNIST.h5 in nets/VGG19-MNIST.
+The library import `import keras.backend.tensorflow_backend as tfback` raises an exception if no GPU is available.
+This can be fixed by commenting out all lines in [`nets/GPU.py in nets/`](nets/GPU.py in nets/)
+
+The trained VGG models are rather big, so they are not versioned. Rather, they are available for [download](https://mega.nz/folder/yKgU2CYD#-Kf3FGZinDe5T6HgLOjxnw).
+Once downloaded, `VGG19-CIFAR/retrain.h5 ` should be moved in [`nets/VGG19-CIFAR`](nets/VGG19-CIFAR) and `VGG19-MNIST/VGG19MNIST.h5` should be moved in [`nets/VGG19-MNIST`](nets/VGG19-MNIST).
 
 
 ## Usage
-Give execute permissions and run runner.sh to perform all the experiments done in the article. After the experiments open the plot\_from\_file.ipynb notebook, change directory_res as indicated to produce the charts.
-
-Currently the notebook reads the results from results\_just\_runned/ and produces the graphs saved in plots_results/
+1. Give execute permissions and run [`runner.sh`](runner.sh).
+2. Open the [`plot\_from\_file.ipynb`](plot\_from\_file.ipynb) notebook, change `directory_res` as described and evaluate all cells to produce the charts. Currently, the notebook reads the results from `results\_just\_runned/` and saves the produced graphs in `plots_results/`.
