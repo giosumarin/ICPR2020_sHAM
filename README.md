@@ -38,4 +38,4 @@ Once downloaded, `VGG19-CIFAR/retrain.h5 ` should be moved in [`nets/VGG19-CIFAR
 
 ## Usage
 1. Give execute permissions and run [`runner.sh`](runner.sh).
-2. Open the [`plot\_from\_file.ipynb`](plot\_from\_file.ipynb) notebook, change `directory_res` as described and evaluate all cells to produce the charts. Currently, the notebook reads the results from `results\_just\_runned/` and saves the produced graphs in `plots_results/`. The results present in the tables of the paper are also shown in the same notebook. The results are divided by compression method and by neural networks.
+2. Open the [`plot\_from\_file.ipynb`](plot\_from\_file.ipynb) notebook, change `directory_res` as described and evaluate all cells to produce the charts. Currently, the notebook reads the results from `results\_just\_runned/` and saves the produced graphs in `plots_results/`. The same notebook also produces the results illustrated in the tables of the paper, organized in terms of compression method and neural networks.
