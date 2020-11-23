@@ -1,5 +1,3 @@
-alias python='python3'
-
 python -m venv venv_compr
 source venv_compr/bin/activate
 pip install --upgrade pip
