@@ -2,7 +2,7 @@
 This repository contains the code allowing to reproduce the results described in G. Marinò et al.,
 _Compression strategies and space-conscious representations for deep neural networks_, accepted at
 the forthcoming [ICPR](https://www.micc.unifi.it/icpr2020/) conference. The original contribution
-is [available](ICPR2020_sHAM.pdf) for reviewing purposes of a companion paper currently submitted at
+is [available](ICPR2020_sHAM.pdf) for reviewing purposes of a companion paper currently submitted to
 the [RRPR](https://rrpr2020.sciencesconf.org/) conference.
 
 
