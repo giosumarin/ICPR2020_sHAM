@@ -12,7 +12,7 @@ the [RRPR](https://rrpr2020.sciencesconf.org/) conference.
 
 * Install `python3`, `python3-pip` and `python3-venv` (Debian 10.6)
 * Make sure that `python --version` starts by 3 or execute `alias python='pyhton3'` in the shell before executing `runner.sh`.
-* For CUDA configuration follow https://www.tensorflow.org/install/gpu.
+* For CUDA configuration (if GPU available) follow https://www.tensorflow.org/install/gpu.
 * Jupyter Notebook is needed for chart generation.
 
 <!--
@@ -37,5 +37,5 @@ Once downloaded, `VGG19-CIFAR/retrain.h5 ` should be moved in [`nets/VGG19-CIFAR
 
 
 ## Usage
-1. Give execute permissions and run [`runner.sh`](runner.sh).
+1. Give execute permissions and run either [`runner_GPU.sh`](runner_GPU.sh) (if you have a GPU) or [`runner_CPU.sh`](runner_CPU.sh) (if you only rely on CPU). Note that the latter option implies a considerably high execution time.
 2. Open the [`plot_from_file.ipynb`](plot\_from\_file.ipynb) notebook, change `directory_res` as described and evaluate all cells to produce the charts. Currently, the notebook reads the results from `results_just_runned/` and saves the produced graphs in `plots_results/`. The same notebook also produces the results illustrated in the tables of the paper, organized in terms of compression method and neural networks.
