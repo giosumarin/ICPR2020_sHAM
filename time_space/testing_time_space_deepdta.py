@@ -157,7 +157,7 @@ try:
                 if arg == "kiba":
                     print(arg)
                     # data loading
-                    dataset_path = 'tf/DeepDTA/KIBA/kiba/'
+                    dataset_path = '../nets/DeepDTA/KIBA/kiba/'
                     dataset = DataSet( fpath = dataset_path, ### BUNU ARGS DA GUNCELLE
                                           setting_no = 1, ##BUNU ARGS A EKLE
                                           seqlen = 1000,
@@ -192,7 +192,7 @@ try:
 
                 elif arg == "davis":
                     # data loading
-                    dataset_path = 'tf/DeepDTA/DAVIS/davis/'
+                    dataset_path = '../nets/DeepDTA/DAVIS/davis/'
                     dataset = DataSet( fpath = dataset_path, ### BUNU ARGS DA GUNCELLE
                                           setting_no = 1, ##BUNU ARGS A EKLE
                                           seqlen = 1200,
