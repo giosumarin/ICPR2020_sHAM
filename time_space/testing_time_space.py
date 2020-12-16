@@ -153,7 +153,7 @@ try:
                 model_file=arg
             elif opt == "-q":
                 print("probabilistic quantization", arg)
-                q = False if arg == 0 else True
+                q = False if arg == "0" else True
             elif opt == "-s":
                 if arg == "mnist":
                     print(arg)

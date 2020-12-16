@@ -151,8 +151,10 @@ try:
                 print("model_file: ", arg)
                 model_file=arg
             elif opt == "-q":
-                print("probabilistic quantization", arg)
-                q = False if arg == 0 else True
+                
+                q = False if arg == "0" else True
+                print("probabilistic quantization", q)
+                print
             elif opt == "-s":
                 if arg == "kiba":
                     print(arg)
