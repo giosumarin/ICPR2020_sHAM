@@ -1,3 +1,8 @@
+rm -f nets/GPU.py
+cd nets/
+ln -s GPU_off.py GPU.py
+cd ..
+
 python -m venv venv_compr
 source venv_compr/bin/activate
 pip install --upgrade pip
