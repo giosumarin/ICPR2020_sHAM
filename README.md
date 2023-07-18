@@ -5,6 +5,7 @@ the forthcoming [ICPR](https://www.micc.unifi.it/icpr2020/) conference. The orig
 is [available](ICPR2020_sHAM.pdf) for reviewing purposes of a companion paper currently submitted to
 the [RRPR](https://rrpr2020.sciencesconf.org/) conference.
 
+This realization of this repository has been supported by the Italian MUR PRIN project “Multicriteria data structures and algorithms: from compressed to learned indexes, and beyond” (Prot. 2017WR7SHH).
 
 ## Getting Started
 
